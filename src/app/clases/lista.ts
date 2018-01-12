@@ -1,4 +1,4 @@
-import {ListaItem} from './lista-item';
+import { ListaItem } from './lista-item';
 
 export class Lista {
   nombre: string;

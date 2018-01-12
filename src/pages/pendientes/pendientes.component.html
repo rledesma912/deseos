@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>Lista de Pendientes</ion-title>
   </ion-navbar>
 </ion-header>
@@ -11,6 +11,20 @@
   <ul>
     <li *ngFor="let item of srv.listas">
       {{item.nombre}}
-</li>
+    </li>
   </ul>
+
+  <ion-card *ngFor="let item of srv.listas">
+    <ion-card-header>
+      {{item.nombre}}
+    </ion-card-header>
+    <ion-card-content>
+      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-fab right bottom>
+      <button ion-fab mini (click)="irAgregar()"><ion-icon name="add"></ion-icon></button>
+   </ion-fab>
 </ion-content>

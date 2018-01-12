@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 
 import { PendientesComponent } from '../pages/pendientes/pendientes.component';
 import { TerminadosComponent } from '../pages/terminados/terminados.component';
+import { AgregarComponent } from '../pages/agregar/agregar.component';
 
 import { ContactPage } from '../pages/contact/contact';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -15,6 +16,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 //servicios
 import {ListaDeseosService} from './services/listadeseos';
 
+//pipes
+import {PlaceholderPipe} from './pipes/placeholder.pipe';
+
+
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -22,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
     MyApp,
     PendientesComponent,
     TerminadosComponent,
+    AgregarComponent,
     ContactPage,
     TabsPage
   ],
@@ -36,6 +42,7 @@ import { HttpClientModule } from '@angular/common/http';
     PendientesComponent,
     TerminadosComponent,
     ContactPage,
+    AgregarComponent,
     TabsPage
   ],
   providers: [
