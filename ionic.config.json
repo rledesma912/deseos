@@ -1,0 +1,8 @@
+{
+  "name": "wisheslist",
+  "app_id": "880d8b07",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
