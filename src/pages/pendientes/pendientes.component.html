@@ -8,18 +8,18 @@
 
   <h1>Pendientes!!!</h1>
 
-  <ul>
+  <!-- <ul>
     <li *ngFor="let item of srv.listas">
       {{item.nombre}}
     </li>
-  </ul>
+  </ul> -->
 
   <ion-card *ngFor="let item of srv.listas">
     <ion-card-header>
       {{item.nombre}}
     </ion-card-header>
-    <ion-card-content>
-      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+    <ion-card-content *ngFor="let i of item.items">
+      {{i.nombre}}
     </ion-card-content>
   </ion-card>
 
