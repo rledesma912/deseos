@@ -7,13 +7,6 @@ export class ListaDeseosService {
   listas : Lista[] = []
 
   constructor(){
-    // let lista1 = new  Lista('compras del super');
-    // let lista2 = new  Lista('juegos que comprar');
-    // let lista3 = new  Lista('tp de universidad');
-    //
-    // this.listas.push(lista1);
-    // this.listas.push(lista2);
-    // this.listas.push(lista3);
 
     this.cargarData();
     console.log('servicio inicializado');
@@ -31,6 +24,12 @@ export class ListaDeseosService {
 
   agregarLista(lista:Lista){
     this.listas.push(lista);
+    this.actualizarDatos();
+  }
+
+  eliminarLista(indice:number){
+    //this.listas.pop(lista);
+    this.listas.splice(indice, 1);
     this.actualizarDatos();
   }
 }

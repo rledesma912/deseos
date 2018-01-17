@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { PendientesComponent } from '../pages/pendientes/pendientes.component';
 import { TerminadosComponent } from '../pages/terminados/terminados.component';
 import { AgregarComponent } from '../pages/agregar/agregar.component';
+import { DetalleComponent } from '../pages/detalle/detalle.component';
 
 import { ContactPage } from '../pages/contact/contact';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -28,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     PendientesComponent,
     TerminadosComponent,
     AgregarComponent,
+    DetalleComponent,
     ContactPage,
     PlaceholderPipe,
     TabsPage
@@ -44,6 +46,7 @@ import { HttpClientModule } from '@angular/common/http';
     TerminadosComponent,
     ContactPage,
     AgregarComponent,
+    DetalleComponent,
     TabsPage
   ],
   providers: [
